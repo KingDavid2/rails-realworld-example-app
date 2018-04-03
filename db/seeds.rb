@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+5.times do
+  Test.create name: Faker::Name.name, tel: Faker::PhoneNumber, data: {pokemon: Faker::Pokemon, lenguage: Faker::ProgrammingLanguage}
+end
